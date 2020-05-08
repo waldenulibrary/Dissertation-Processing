@@ -1,0 +1,1 @@
+Place all zip files downloaded from ProQuest's servers in this downloadedFiles folder.
