@@ -102,7 +102,7 @@
 								<email>
 										<xsl:value-of select="DISS_contact[@type='current']/DISS_email"/>
 								</email>
-								<institution>Walden University</institution>
+								<institution>Your University Name</institution>
 								<lname>
 									<xsl:value-of select="DISS_name/DISS_surname"/>
 								</lname>
@@ -1109,7 +1109,7 @@
 									<xsl:value-of select="DISS_content/DISS_binary"/>
 								</xsl:variable>
 								<xsl:value-of
-									select="concat('https://scholarworks.blob.core.windows.net/dissertations/', $pdfpath)"
+									select="concat('https://location-of-PDFS-on-your-public-server', $pdfpath)"
 								/>
 						</xsl:if>
 						
@@ -1143,26 +1143,8 @@
 								<xsl:when test="contains($degstring,'D.B.A.')">
 									<xsl:value-of select="replace($degstring, 'D.B.A.','Doctor of Business Administration (D.B.A.)')"/>
 								</xsl:when>
-								<xsl:when test="contains($degstring,'D.H.A.')">
-									<xsl:value-of select="replace($degstring, 'D.H.A.','Doctor of Healthcare Administration, DHA')"/>
-								</xsl:when>
-								<xsl:when test="contains($degstring,'D.I.T.')">
-									<xsl:value-of select="replace($degstring, 'D.I.T.','Doctor of Information Technology (D.I.T.)')"/>
-								</xsl:when>
-								<xsl:when test="contains($degstring,'D.N.P.')">
-									<xsl:value-of select="replace($degstring, 'D.N.P.','Doctor of Nursing Practice (DNP)')"/>
-								</xsl:when>
-								<xsl:when test="contains($degstring,'D.P.H.')">
-									<xsl:value-of select="replace($degstring, 'D.P.H.','Doctor of Public Health (DrPH)')"/>
-								</xsl:when>
-								<xsl:when test="contains($degstring,'D.S.W.')">
-									<xsl:value-of select="replace($degstring, 'D.S.W.','Doctor of Social Work (DSW)')"/>
-								</xsl:when>
-								<xsl:when test="contains($degstring,'Dr.PH.')">
-									<xsl:value-of select="replace($degstring, 'Dr.PH.','Doctor of Public Health (DrPH)')"/>
-								</xsl:when>
-								<xsl:when test="contains($degstring,'Ed.D.')">
-									<xsl:value-of select="replace($degstring, 'Ed.D.','Doctor of Education (Ed.D.)')"/>
+								<xsl:when test="contains($degstring,'E.X.')">
+									<xsl:value-of select="replace($degstring, 'E.X.','Add more rows for additional degrees, EX')"/>
 								</xsl:when>
 								<xsl:otherwise>
 									<xsl:value-of select="$degstring"/>
