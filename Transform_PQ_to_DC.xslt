@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!--
-	Copyright (c) 2012 The University of Iowa, by Shawn Averkamp, Joanna Lee, & Logal Jewett
+	Copyright (c) 2012 The University of Iowa, by Shawn Averkamp, Joanna Lee, & Logan Jewett
 	Modifications Copyright (c) 2019 Walden University, by Heather Westerlund
 	2019-06: Updated XML to be compliant with ProQuest and Digital Common's updated schemas. Updated structure to function with batch file process. Added discipline and degree crosswalks. Updated embargo settings. Added advisor name formatting rules.
 
