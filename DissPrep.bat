@@ -24,10 +24,10 @@ move DissPrep.bat.txt %~dp0\downloadedFiles
 
 rem remove XML namespace
 cd /d %cd%\downloadedFiles
-type DissPrep.bat.txt | find /v /i "8859" > CombinedXML.txt
+type DissPrep.bat.txt | find /v /i "UTF-8" > CombinedXML.txt
 
 rem add XML namespace to top
-echo ^<?xml version="1.0" encoding="ISO-8859-1"?^> > temp.txt
+echo ^<?xml version="1.0" encoding="UTF-8"?^> > temp.txt
 type CombinedXML.txt >> temp.txt
 move /y temp.txt CombinedXML.txt
 
